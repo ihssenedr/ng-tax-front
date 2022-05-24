@@ -1,0 +1,25 @@
+<div class="uk-container-small uk-align-center">
+  <table class="uk-table uk-table-hover uk-table-divider">
+    <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Description</th>
+      <th>Pays</th>
+      <th>Année</th>
+      <th>Trimestre</th>
+      <th>Date création</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let tax of (taxes)">
+      <td>{{tax.name}}</td>
+      <td>{{tax.description}}</td>
+      <td>{{tax.country}}</td>
+      <td>{{tax.year}}</td>
+      <td>{{tax.trimester}}</td>
+      <td>{{tax.creation_date | date}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+</div>

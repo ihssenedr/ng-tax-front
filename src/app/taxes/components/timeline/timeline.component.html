@@ -1,0 +1,7 @@
+<div class="timeline">
+  <app-timelineentry *ngFor='let entry of data'
+                     timeEntryHeader={{entry.year}}
+                     timeEntryContent={{entry.name}}
+                     timeEntryDescription="{{entry.description}}"
+                     timeEntryPlace="left"></app-timelineentry>
+</div>
